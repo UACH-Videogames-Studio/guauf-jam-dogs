@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class line1 : MonoBehaviour
+public class line : MonoBehaviour
 {
+    public string lineIdentifier = "line1";   // Identificador de la línea
     public float normalSpeed = 5f;   // Velocidad normal de la línea de autos
     public float slowSpeed = 2f;     // Velocidad ralentizada de la línea de autos
     private float speed;      // Velocidad actual de la línea
     private bool isSlowed = false;   // Saber si la línea ya está ralentizada
-    public float slowDuration = 5f;  // Duración de la ralentización
 
     void Start()
     {
@@ -24,12 +24,20 @@ public class line1 : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        // Asignar la velocidad a todos los hijos que tengan el script MoveCycle
+        VehicleEvents.OnSlowDown += SlowDownLine;
+    }
+
+    void OnDisable()
+    {
+        VehicleEvents.OnSlowDown -= SlowDownLine;
+    }   
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isSlowed)
-        {
-            SlowDownLine();
-        }
+    
         UpdateChildSpeeds(); 
     }
 
@@ -46,21 +54,21 @@ public class line1 : MonoBehaviour
         }
     }
 
-        public void SlowDownLine()
+        public void SlowDownLine(string line, float newSpeed, float duration)
     {
-        if (!isSlowed)  // Solo aplicar si no está ralentizada
+        if (!isSlowed && line == lineIdentifier)  // Solo aplicar si no está ralentizada
         {
             isSlowed = true;
             speed = slowSpeed;  // Cambiar a la velocidad ralentizada
             UpdateChildSpeeds();       // Actualizar la velocidad de todos los hijos
-            StartCoroutine(RestoreSpeedAfterDelay());  // Restaurar la velocidad después del tiempo
+            StartCoroutine(RestoreSpeedAfterDelay(duration));  // Restaurar la velocidad después del tiempo
         }
     }
 
     // Corutina para restaurar la velocidad después de que pase la duración de ralentización
-    private IEnumerator RestoreSpeedAfterDelay()
+    private IEnumerator RestoreSpeedAfterDelay(float duration)
     {
-        yield return new WaitForSeconds(slowDuration);
+        yield return new WaitForSeconds(duration);
         speed = normalSpeed;  // Restaurar la velocidad normal
         isSlowed = false;            // Marcar que ya no está ralentizada
         UpdateChildSpeeds();         // Actualizar la velocidad de los hijos nuevamente

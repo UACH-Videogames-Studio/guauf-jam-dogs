@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Dev/Stariluz/Game.unity
     guid: 4ee0309747959f341953d956087dffe5
   - enabled: 1
-    path: Assets/Dev/Stariluz/Testing.unity
+    path: Assets/Dogger/Scenes/MenuScene.unity
     guid: ae6a3750ad7f91b42a6020399357531f
   m_configObjects: {}

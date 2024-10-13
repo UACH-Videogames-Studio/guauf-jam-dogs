@@ -216,7 +216,7 @@ MonoBehaviour:
   - {fileID: 8052730528216737841}
   gapBetweenCars: 0.5
   minTime: 0.5
-  maxTime: 1
+  maxTime: 1.5
 --- !u!1 &6189146385710191464
 GameObject:
   m_ObjectHideFlags: 0

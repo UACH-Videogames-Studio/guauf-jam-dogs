@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CarSpawner : MonoBehaviour
@@ -6,22 +7,25 @@ public class CarSpawner : MonoBehaviour
     [SerializeField]
     private Sprite[] cars;
     private int carsLength = 0;
-    [SerializeField] bool carToRight=true;
     [SerializeField]
     [Min(0)]
     float carSpeed=5;
+    [SerializeField]
+    bool carToRight=true;
+    [SerializeField]
+    private GameObject carPrefab;
 
     [SerializeField]
-    private float minTime, maxTime = 0f;
-
-    [SerializeField]
-    private GameObject carPrefab; // Car prefab to instantiate
-    private Vector3 positionLastSpawned;
+    private CarMovement[]  defaultCars;
 
     [SerializeField]
     private float gapBetweenCars = 0.5f;
 
+    [SerializeField]
+    private float minTime, maxTime = 0f;
     private float lastSpawnX;
+
+    private Vector3 positionLastSpawned;
 
     Coroutine timeCoroutine;
 
@@ -31,6 +35,11 @@ public class CarSpawner : MonoBehaviour
         carsLength = cars.Length;
         lastSpawnX = transform.position.x;
 
+        if(defaultCars!=null){
+            for(int i=0; i<defaultCars.Length; i++){
+                defaultCars[i].speed=(carToRight?1:-1)*carSpeed;
+            }
+        }
 
         // Start the coroutine to spawn cars at random intervals
         timeCoroutine = StartCoroutine(TimeCoroutine());

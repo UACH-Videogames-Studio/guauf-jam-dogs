@@ -1571,6 +1571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7814928346798620933, guid: 615aa28805ec47d4d85b1a0100e10851, type: 3}
+      propertyPath: carSpeed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1906,6 +1910,10 @@ PrefabInstance:
     - target: {fileID: 8789188896195259740, guid: 112d3f0845889774481c18441463fd63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948981249797689949, guid: 112d3f0845889774481c18441463fd63, type: 3}
+      propertyPath: carSpeed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2247,6 +2255,10 @@ PrefabInstance:
     - target: {fileID: 240835415010983317, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_Name
       value: RenderLine (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
+      propertyPath: carSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4978556916888808503, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_LocalPosition.x

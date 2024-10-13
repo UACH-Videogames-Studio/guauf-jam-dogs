@@ -16,30 +16,6 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 6fabcace29e8ef4498718bc938dd3729, type: 2}
-    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
-      propertyPath: cars.Array.size
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
-      propertyPath: cars.Array.data[35]
-      value: 
-      objectReference: {fileID: 21300000, guid: 334d56b04bc31564799e3046a71a2d78, type: 3}
-    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
-      propertyPath: cars.Array.data[36]
-      value: 
-      objectReference: {fileID: 21300000, guid: 9d2f6f07bb39a7c418be8768285e283e, type: 3}
-    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
-      propertyPath: cars.Array.data[37]
-      value: 
-      objectReference: {fileID: 21300000, guid: c7f4d7f99a5fcca49977e25b6b753af0, type: 3}
-    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
-      propertyPath: cars.Array.data[38]
-      value: 
-      objectReference: {fileID: 21300000, guid: adc7077bf94c26048be018ef2249769f, type: 3}
-    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
-      propertyPath: cars.Array.data[39]
-      value: 
-      objectReference: {fileID: 21300000, guid: 42c06f3c47effe14693528ff3ed34393, type: 3}
     - target: {fileID: 4978556916888808503, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

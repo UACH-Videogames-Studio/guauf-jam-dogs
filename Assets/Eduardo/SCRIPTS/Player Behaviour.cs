@@ -62,8 +62,8 @@ public class PlayerBehaviour : MonoBehaviour
 
             if (dogLives == 0)
             {
-                Console.WriteLine("Hemos muerto");
                 Debug.Log("Hemos muerto");
+                Time.timeScale = 0;
             }
         }
     } 

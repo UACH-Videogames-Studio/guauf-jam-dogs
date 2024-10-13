@@ -39,7 +39,7 @@ public class UImanager : MonoBehaviour
     {
         if (finish != null)
         {
-            points -= Time.deltaTime;
+            points -= Time.deltaTime*20;
         }
         else if (!hasFinish)
         {

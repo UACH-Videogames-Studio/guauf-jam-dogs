@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class SlowDownLineSkill : MonoBehaviour
 {
     public float slowSpeed = 2f;
     public float slowDuration = 5f; 

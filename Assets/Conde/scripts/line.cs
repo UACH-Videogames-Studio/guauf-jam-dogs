@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class line : MonoBehaviour
 {
-    public string lineIdentifier = "line1";   // Identificador de la línea
     public float normalSpeed = 5f;   // Velocidad normal de la línea de autos
     public float slowSpeed = 2f;     // Velocidad ralentizada de la línea de autos
     private float speed;      // Velocidad actual de la línea
@@ -24,21 +23,21 @@ public class line : MonoBehaviour
         }
     }
 
-    void OnEnable()
-    {
-        // Asignar la velocidad a todos los hijos que tengan el script MoveCycle
-        VehicleEvents.OnSlowDown += SlowDownLine;
-    }
+    // void OnEnable()
+    // {
+    //     // Asignar la velocidad a todos los hijos que tengan el script MoveCycle
+    //     VehicleEvents.OnSlowDown += SlowDownLine;
+    // }
 
-    void OnDisable()
-    {
-        VehicleEvents.OnSlowDown -= SlowDownLine;
-    }   
+    // void OnDisable()
+    // {
+    //     VehicleEvents.OnSlowDown -= SlowDownLine;
+    // }
 
     void Update()
     {
-    
-        UpdateChildSpeeds(); 
+
+        UpdateChildSpeeds();
     }
 
     private void UpdateChildSpeeds()
@@ -54,9 +53,17 @@ public class line : MonoBehaviour
         }
     }
 
-        public void SlowDownLine(string line, float newSpeed, float duration)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isSlowed && line == lineIdentifier)  // Solo aplicar si no está ralentizada
+        if (other.CompareTag("SlowDownTrigger"))
+        {
+            other.gameObject.SetActive(false);
+            SlowDownLine(SlowDownLineSkill.slowDuration);
+        }
+    }
+    public void SlowDownLine(float duration)
+    {
+        if (!isSlowed)  // Solo aplicar si no está ralentizada
         {
             isSlowed = true;
             speed = slowSpeed;  // Cambiar a la velocidad ralentizada

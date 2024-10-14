@@ -9,11 +9,11 @@ public static class VehicleEvents
     public static event Action<string, float, float> OnSlowDown;
 
     // Método para disparar el evento de ralentización
-    public static void TriggerSlowDown(string lineIdentifier, float speed, float duration)
+    public static void TriggerSlowDown(float speed, float duration)
     {
-        if (OnSlowDown != null)
-        {
-            OnSlowDown(lineIdentifier, speed, duration); // Disparador
-        }
+        // if (OnSlowDown != null)
+        // {
+        //     OnSlowDown(speed, duration); // Disparador
+        // }
     }
 }

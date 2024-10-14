@@ -1,0 +1,1453 @@
+fileFormatVersion: 2
+guid: a2d951f5729f1004b92e32c019f8ad79
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TCarSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 779
+        width: 38
+        height: 21
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 19, y: 5.5}
+        - {x: -19, y: 5.5}
+        - {x: -19, y: -10.5}
+        - {x: 19, y: -10.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f96667f13180e441b0ee88dcfa631ac
+      internalID: 442399565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 786
+        width: 23
+        height: 14
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 11.5, y: 5.5}
+        - {x: -11.5, y: 5.5}
+        - {x: -11.5, y: -7}
+        - {x: 11.5, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc94b41023e4ee43b940fb18e8cc751
+      internalID: 1097077933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 779
+        width: 45
+        height: 21
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22.5, y: 5.5}
+        - {x: -22.5, y: 5.5}
+        - {x: -22.5, y: -10.5}
+        - {x: 22.5, y: -10.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f2517829be6024c81427cabb211a82
+      internalID: -2093898931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 779
+        width: 46
+        height: 21
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22.5, y: 5.5}
+        - {x: -22.5, y: 5.5}
+        - {x: -22.5, y: -10.5}
+        - {x: 22.5, y: -10.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4168972468306e44aaa67f5accd7670
+      internalID: -937938599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 723
+        width: 32
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 5.5}
+        - {x: -16, y: 5.5}
+        - {x: -16, y: -6.5}
+        - {x: 16, y: -6.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e46f26ab69706a49bed6a1167b3ed3c
+      internalID: 1588849736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 726
+        width: 16
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 5}
+        - {x: -8, y: 5}
+        - {x: -8, y: -5}
+        - {x: 8, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddddd5864b8c5f144bead7b58a3ff3f8
+      internalID: 437023697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 728
+        width: 16
+        height: 8
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: -4}
+        - {x: 8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a1f811cc88a3343a9c39dc245fa6a8
+      internalID: 1763330113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 715
+        width: 44
+        height: 21
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22, y: 5.5}
+        - {x: -22, y: 5.5}
+        - {x: -22, y: -10.5}
+        - {x: 22, y: -10.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8b82a280dbed44695062b24667cbb5
+      internalID: 2120184286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 663
+        width: 33
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 4.5}
+        - {x: -16.5, y: 4.5}
+        - {x: -16.5, y: -4.5}
+        - {x: 16.5, y: -4.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9680d8fd869cdb44cbe21459e442df32
+      internalID: 739384751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 643
+        width: 40
+        height: 29
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 20, y: 1.5}
+        - {x: -20, y: 1.5}
+        - {x: -20, y: -14.5}
+        - {x: 20, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d02a750c0894b4a82526bee7f02072
+      internalID: -901231050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 664
+        width: 22
+        height: 8
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 4}
+        - {x: -11, y: 4}
+        - {x: -11, y: -4}
+        - {x: 11, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b9eb711a2fec24ea1aa3028c2c0f21
+      internalID: -1381399852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 658
+        width: 33
+        height: 14
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -7}
+        - {x: 16.5, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8bd7f734467204dbb7362a240b1399
+      internalID: 1677170871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 587
+        width: 40
+        height: 21
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 20, y: 5.5}
+        - {x: -20, y: 5.5}
+        - {x: -20, y: -10.5}
+        - {x: 20, y: -10.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1e15c669012df499206e17779db51d
+      internalID: 1858241976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 595
+        width: 32
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 5.5}
+        - {x: -16, y: 5.5}
+        - {x: -16, y: -6.5}
+        - {x: 16, y: -6.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5fb23778cb4e647a0047f393c563a8
+      internalID: 903823088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 596
+        width: 31
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15.5, y: 5.5}
+        - {x: -15.5, y: 5.5}
+        - {x: -15.5, y: -6}
+        - {x: 15.5, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c419fb768f814d408cd65e789819c96
+      internalID: -1451554864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 597
+        width: 33
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -5.5}
+        - {x: 16.5, y: -5.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a04b15173ab34d41a8c0d2643089d28
+      internalID: 66638315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 535
+        width: 15
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7.5, y: 4.5}
+        - {x: -7.5, y: 4.5}
+        - {x: -7.5, y: -4.5}
+        - {x: 7.5, y: -4.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b2e3ec30480a745a6fa6a17970c669
+      internalID: -1292355761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 531
+        width: 29
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14.5, y: 5.5}
+        - {x: -14.5, y: 5.5}
+        - {x: -14.5, y: -6.5}
+        - {x: 14.5, y: -6.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f62de3c3fcde74581ff4f5113102e7
+      internalID: -278546532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 531
+        width: 29
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14.5, y: 5.5}
+        - {x: -14.5, y: 5.5}
+        - {x: -14.5, y: -6.5}
+        - {x: 14.5, y: -6.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3aceaec14907234482cc2f244c1ea0b
+      internalID: 208546355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 531
+        width: 36
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 18, y: 5.5}
+        - {x: -18, y: 5.5}
+        - {x: -18, y: -6.5}
+        - {x: 18, y: -6.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4c75e05e78e144497202690c254fab
+      internalID: -1733632186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 469
+        width: 33
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -5.5}
+        - {x: 16.5, y: -5.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe96e8e460ac97469b57b560464d6f3
+      internalID: -120189206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 469
+        width: 29
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14.5, y: 5.5}
+        - {x: -14.5, y: 5.5}
+        - {x: -14.5, y: -5.5}
+        - {x: 14.5, y: -5.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f4a8ca695d08b4bb4a9a58af4c8225
+      internalID: -1608374675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 468
+        width: 34
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 17, y: 5.5}
+        - {x: -17, y: 5.5}
+        - {x: -17, y: -6}
+        - {x: 17, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0018e1ce9775b4e49900d53ee749f690
+      internalID: -769109390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 468
+        width: 33
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -6}
+        - {x: 16.5, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1083eb1e4ba63c4458b391b68e56f488
+      internalID: -1154975096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 405
+        width: 33
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -5.5}
+        - {x: 16.5, y: -5.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179e4e728045efb488d5740381a0961b
+      internalID: -2138514435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 403
+        width: 34
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 17, y: 5.5}
+        - {x: -17, y: 5.5}
+        - {x: -17, y: -6.5}
+        - {x: 17, y: -6.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d84c2a5225f21d4ba0544a88caccf27
+      internalID: -1000933075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 401
+        width: 31
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15.5, y: 5.5}
+        - {x: -15.5, y: 5.5}
+        - {x: -15.5, y: -7.5}
+        - {x: 15.5, y: -7.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e7465ae0adc434a89b549e548f6630
+      internalID: 309674705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 401
+        width: 28
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 5.5}
+        - {x: -14, y: 5.5}
+        - {x: -14, y: -7.5}
+        - {x: 14, y: -7.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242423a57c5d9394aa4db5c32319ec1f
+      internalID: -1041709563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 337
+        width: 30
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15, y: 5.5}
+        - {x: -15, y: 5.5}
+        - {x: -15, y: -7.5}
+        - {x: 15, y: -7.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1435eba0b35ccf045b207c0f73262eb2
+      internalID: 1279124984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 337
+        width: 33
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -7.5}
+        - {x: 16.5, y: -7.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba53fb5ce0bccf489ba12d08796e28f
+      internalID: -57957910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 338
+        width: 28
+        height: 14
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 5.5}
+        - {x: -14, y: 5.5}
+        - {x: -14, y: -7}
+        - {x: 14, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61271555cee7f23488848122c20379cf
+      internalID: -1407225354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 336
+        width: 32
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 5.5}
+        - {x: -16, y: 5.5}
+        - {x: -16, y: -8}
+        - {x: 16, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6eca8805b6b4b4584283f1efc5606b
+      internalID: 706375193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 274
+        width: 33
+        height: 14
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -7}
+        - {x: 16.5, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dc6c9f95db7384b8a7d4d68dc69140
+      internalID: 1198039901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 268
+        width: 45
+        height: 20
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22.5, y: 5.5}
+        - {x: -22.5, y: 5.5}
+        - {x: -22.5, y: -10}
+        - {x: 22.5, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc94c866bff218146a98b26d5810293f
+      internalID: 1235352995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 270
+        width: 24
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 12, y: 5.5}
+        - {x: -12, y: 5.5}
+        - {x: -12, y: -9}
+        - {x: 12, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e08e65ad46edda429e9ebe845159f0d
+      internalID: 580779560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 271
+        width: 35
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 17.5, y: 5.5}
+        - {x: -17.5, y: 5.5}
+        - {x: -17.5, y: -8.5}
+        - {x: 17.5, y: -8.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278cadaec414695408dd77e873ff6e30
+      internalID: -939928895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 200
+        width: 59
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 29.5, y: 4}
+        - {x: -29.5, y: 4}
+        - {x: -29.5, y: -12}
+        - {x: 29.5, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c60beff6e1c52c43aff34ccba3ff4df
+      internalID: 1780821175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 200
+        width: 39
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 19.5, y: 4}
+        - {x: -19.5, y: 4}
+        - {x: -19.5, y: -12}
+        - {x: 19.5, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4aa2eb32cd0d7e4b970cc8608295298
+      internalID: -1831118625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 204
+        width: 30
+        height: 20
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15, y: 5.5}
+        - {x: -15, y: 5.5}
+        - {x: -15, y: -10}
+        - {x: 15, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d66b778afcf2c4f907569fe5f2774c
+      internalID: 734487002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 203
+        width: 37
+        height: 21
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 18.5, y: 5.5}
+        - {x: -18.5, y: 5.5}
+        - {x: -18.5, y: -10.5}
+        - {x: 18.5, y: -10.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba63ce3c14dec143b621965fc4b54ff
+      internalID: -860592308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 136
+        width: 44
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22, y: 4}
+        - {x: -22, y: 4}
+        - {x: -22, y: -12}
+        - {x: 22, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799136ca18eefa14cb80bc33139a82c2
+      internalID: 999486391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 136
+        width: 65
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32.5, y: 4}
+        - {x: -32.5, y: 4}
+        - {x: -32.5, y: -12}
+        - {x: 32.5, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ea8145d588d2a4aa43d20889c77dc5
+      internalID: 1284687197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 140
+        width: 47
+        height: 20
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23.5, y: 5}
+        - {x: -23.5, y: 5}
+        - {x: -23.5, y: -10}
+        - {x: 23.5, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d43e18ab3e3ee439304cddad3315d3
+      internalID: -1839946060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 136
+        width: 48
+        height: 24
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 4}
+        - {x: -24, y: 4}
+        - {x: -24, y: -12}
+        - {x: 24, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2800c0b5778cbe45b20661dccf6d1a5
+      internalID: 1381756038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 79
+        width: 33
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16.5, y: 5.5}
+        - {x: -16.5, y: 5.5}
+        - {x: -16.5, y: -8.5}
+        - {x: 16.5, y: -8.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a08fb0611764542949a3e795202b5f
+      internalID: 955382686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 79
+        width: 37
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 18.5, y: 5.5}
+        - {x: -18.5, y: 5.5}
+        - {x: -18.5, y: -8.5}
+        - {x: 18.5, y: -8.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546ebf13e281f5c44b5f54ea9bbee355
+      internalID: -1597125294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 77
+        width: 35
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 17.5, y: 5.5}
+        - {x: -17.5, y: 5.5}
+        - {x: -17.5, y: -9.5}
+        - {x: 17.5, y: -9.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e9facaadf29f548ba0672313aea322
+      internalID: 1308844704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 80
+        width: 31
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15.5, y: 5.5}
+        - {x: -15.5, y: 5.5}
+        - {x: -15.5, y: -8}
+        - {x: 15.5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da82f0f7bd13de4db037aeb39ed86ff
+      internalID: -158677788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 10
+        width: 38
+        height: 22
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 19, y: 5}
+        - {x: -19, y: 5}
+        - {x: -19, y: -11}
+        - {x: 19, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a2b4c449890204a8b6351569d68c7b
+      internalID: -637620499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TCarSpritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 20
+        width: 36
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 18, y: 5.5}
+        - {x: -18, y: 5.5}
+        - {x: -18, y: -6}
+        - {x: 18, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ea04dbc8343524d87ee9fb7f018139
+      internalID: 1387253592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TCarSpritesheet_0: 442399565
+      TCarSpritesheet_1: 1097077933
+      TCarSpritesheet_10: -1381399852
+      TCarSpritesheet_11: 1677170871
+      TCarSpritesheet_12: 1858241976
+      TCarSpritesheet_13: 903823088
+      TCarSpritesheet_14: -1451554864
+      TCarSpritesheet_15: 66638315
+      TCarSpritesheet_16: -1292355761
+      TCarSpritesheet_17: -278546532
+      TCarSpritesheet_18: 208546355
+      TCarSpritesheet_19: -1733632186
+      TCarSpritesheet_2: -2093898931
+      TCarSpritesheet_20: -120189206
+      TCarSpritesheet_21: -1608374675
+      TCarSpritesheet_22: -769109390
+      TCarSpritesheet_23: -1154975096
+      TCarSpritesheet_24: -2138514435
+      TCarSpritesheet_25: -1000933075
+      TCarSpritesheet_26: 309674705
+      TCarSpritesheet_27: -1041709563
+      TCarSpritesheet_28: 1279124984
+      TCarSpritesheet_29: -57957910
+      TCarSpritesheet_3: -937938599
+      TCarSpritesheet_30: -1407225354
+      TCarSpritesheet_31: 706375193
+      TCarSpritesheet_32: 1198039901
+      TCarSpritesheet_33: 1235352995
+      TCarSpritesheet_34: 580779560
+      TCarSpritesheet_35: -939928895
+      TCarSpritesheet_36: 1780821175
+      TCarSpritesheet_37: -1831118625
+      TCarSpritesheet_38: 734487002
+      TCarSpritesheet_39: -860592308
+      TCarSpritesheet_4: 1588849736
+      TCarSpritesheet_40: 999486391
+      TCarSpritesheet_41: 1284687197
+      TCarSpritesheet_42: -1839946060
+      TCarSpritesheet_43: 1381756038
+      TCarSpritesheet_44: 955382686
+      TCarSpritesheet_45: -1597125294
+      TCarSpritesheet_46: 1308844704
+      TCarSpritesheet_47: -158677788
+      TCarSpritesheet_48: -637620499
+      TCarSpritesheet_49: 1387253592
+      TCarSpritesheet_5: 437023697
+      TCarSpritesheet_6: 1763330113
+      TCarSpritesheet_7: 2120184286
+      TCarSpritesheet_8: 739384751
+      TCarSpritesheet_9: -901231050
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

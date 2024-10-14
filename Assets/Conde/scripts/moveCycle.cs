@@ -14,7 +14,7 @@ public class MoveCycle : MonoBehaviour
     private void Start()
     {
         // Obtiene los límites de la pantalla
-        leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
+        leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero)-2*Vector3.right;
         rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
     }
 

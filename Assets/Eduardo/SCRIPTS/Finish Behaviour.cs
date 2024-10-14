@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FinishBehaviour : MonoBehaviour
 {
+    public MusicManager musicManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class FinishBehaviour : MonoBehaviour
         if (other.CompareTag("Dog"))
         {
             Destroy(this.gameObject);
+            musicManager.PlayWinSound();
         }
     }
 }

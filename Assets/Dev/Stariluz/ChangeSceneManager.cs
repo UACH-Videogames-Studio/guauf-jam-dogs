@@ -1,15 +1,18 @@
-using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 using Eflatun.SceneReference;
 
 public class ChangeSceneManager : MonoBehaviour
 {
+    
     [SerializeField] private SceneReference GameScene;
+    [SerializeField] private GameObject gameOverPanel;   // Panel de "Game Over"
+    [SerializeField] private GameObject creditsPanel;    // Panel de Créditos
 
     public bool activateOnInput = true;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
         if (activateOnInput && Input.anyKey)
         {

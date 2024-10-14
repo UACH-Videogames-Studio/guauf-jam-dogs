@@ -22,7 +22,7 @@ public class Catbehaviour : MonoBehaviour
         if (other.CompareTag("Dog"))
         {
             Destroy(this.gameObject);
-            musicManager.catSound.Play();
+            musicManager.PlayCatSound();
         }
     }
 }

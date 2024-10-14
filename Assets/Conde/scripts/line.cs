@@ -1,26 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class line : MonoBehaviour
 {
     public float normalSpeed = 5f;   // Velocidad normal de la línea de autos
     public float slowSpeed = 2f;     // Velocidad ralentizada de la línea de autos
-    private float speed;      // Velocidad actual de la línea
+    [SerializeField] private bool lineToRight = true;      // Velocidad actual de la línea
+    private float speed = 5;      // Velocidad actual de la línea
     private bool isSlowed = false;   // Saber si la línea ya está ralentizada
+    private Vector2 direction;
 
     void Start()
     {
-        // Asignar la velocidad a todos los hijos que tengan el script MoveCycle
-        foreach (Transform child in transform)
-        {
-            speed = normalSpeed;
-            MoveCycle moveCycle = child.GetComponent<MoveCycle>();
-            if (moveCycle != null)
-            {
-                moveCycle.SetSpeed(speed); // Establece la velocidad del auto
-            }
-        }
+        direction = lineToRight ? Vector2.right : Vector2.left;
+        speed = normalSpeed;
+        UpdateChildren();
     }
 
     // void OnEnable()
@@ -36,11 +32,13 @@ public class line : MonoBehaviour
 
     void Update()
     {
-
-        UpdateChildSpeeds();
+        if(!isSlowed){
+            speed=normalSpeed;
+        }
+        UpdateChildren();
     }
 
-    private void UpdateChildSpeeds()
+    private void UpdateChildren()
     {
         // Asignar la velocidad a todos los hijos que tengan el script MoveCycle
         foreach (Transform child in transform)
@@ -48,6 +46,7 @@ public class line : MonoBehaviour
             MoveCycle moveCycle = child.GetComponent<MoveCycle>();
             if (moveCycle != null)
             {
+                moveCycle.SetDirection(direction);
                 moveCycle.SetSpeed(speed); // Establece la velocidad del auto
             }
         }
@@ -67,7 +66,7 @@ public class line : MonoBehaviour
         {
             isSlowed = true;
             speed = slowSpeed;  // Cambiar a la velocidad ralentizada
-            UpdateChildSpeeds();       // Actualizar la velocidad de todos los hijos
+            UpdateChildren();       // Actualizar la velocidad de todos los hijos
             StartCoroutine(RestoreSpeedAfterDelay(duration));  // Restaurar la velocidad después del tiempo
         }
     }
@@ -78,7 +77,7 @@ public class line : MonoBehaviour
         yield return new WaitForSeconds(duration);
         speed = normalSpeed;  // Restaurar la velocidad normal
         isSlowed = false;            // Marcar que ya no está ralentizada
-        UpdateChildSpeeds();         // Actualizar la velocidad de los hijos nuevamente
+        UpdateChildren();         // Actualizar la velocidad de los hijos nuevamente
     }
 }
 

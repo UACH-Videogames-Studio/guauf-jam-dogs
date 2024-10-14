@@ -271,7 +271,7 @@ Transform:
   m_GameObject: {fileID: 129486456}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -291,6 +291,22 @@ PrefabInstance:
     - target: {fileID: 1740673428669863419, guid: 14ee058cac81c144db7c9be779aaa163, type: 3}
       propertyPath: m_Name
       value: Car_Line_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605598605059911939, guid: 14ee058cac81c144db7c9be779aaa163, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911732665984753150, guid: 14ee058cac81c144db7c9be779aaa163, type: 3}
+      propertyPath: slowSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911732665984753150, guid: 14ee058cac81c144db7c9be779aaa163, type: 3}
+      propertyPath: normalSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318250612851510609, guid: 14ee058cac81c144db7c9be779aaa163, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 8738938909021470596, guid: 14ee058cac81c144db7c9be779aaa163, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10202,7 +10218,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6235822274519073284, guid: 4283aec6a40656a41bb3f97ce72b1c19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6235822274519073284, guid: 4283aec6a40656a41bb3f97ce72b1c19, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10261,9 +10277,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_Line_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2201217379442407209, guid: 366c98f974d93a74e821e1a956466887, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
     - target: {fileID: 4245958033194812282, guid: 366c98f974d93a74e821e1a956466887, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4245958033194812282, guid: 366c98f974d93a74e821e1a956466887, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10305,6 +10325,10 @@ PrefabInstance:
       propertyPath: normalSpeed
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 7440493564746868540, guid: 366c98f974d93a74e821e1a956466887, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10322,9 +10346,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_Line_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2790275448740743987, guid: c2fcc2809264e174a9f48452d193e77e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
     - target: {fileID: 5672052438241091787, guid: c2fcc2809264e174a9f48452d193e77e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5672052438241091787, guid: c2fcc2809264e174a9f48452d193e77e, type: 3}
       propertyPath: m_LocalPosition.y

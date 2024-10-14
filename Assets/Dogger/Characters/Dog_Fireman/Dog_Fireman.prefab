@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1424001217211933665}
   - component: {fileID: 2592116436305881480}
   m_Layer: 0
-  m_Name: Dog
+  m_Name: Dog_Fireman
   m_TagString: Dog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,8 +196,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 0}
+  musicManager: {fileID: 0}
   uIManager: {fileID: 0}
   lateralMovementUnits: 1
+  animator: {fileID: 6982838235438451964}
 --- !u!114 &2592116436305881480
 MonoBehaviour:
   m_ObjectHideFlags: 0

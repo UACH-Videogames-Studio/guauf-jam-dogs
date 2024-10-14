@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSpeed: 4
   slowSpeed: 2
-  lineToRight: 0
+  lineToRight: 1
 --- !u!61 &3137385236979333899
 BoxCollider2D:
   m_ObjectHideFlags: 0

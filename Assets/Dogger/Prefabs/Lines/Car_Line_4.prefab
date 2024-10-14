@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8738938909021470596}
   - component: {fileID: 5911732665984753150}
   - component: {fileID: 8468231662061264575}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car_Line_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,8 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e34795270b77a248a2efe4232742a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 5
-  slowSpeed: 2
+  normalSpeed: 2
+  slowSpeed: 1.5
+  lineToRight: 0
 --- !u!61 &8468231662061264575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7015967078079582150, guid: 197e14cfd2f2be34aadb1b321d1f301c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 7015967078079582150, guid: 197e14cfd2f2be34aadb1b321d1f301c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -166,7 +167,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405412651247278927, guid: dbe604b6f79630949bafa39e81c75702, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.25
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 405412651247278927, guid: dbe604b6f79630949bafa39e81c75702, type: 3}
       propertyPath: m_LocalPosition.y

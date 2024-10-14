@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5672052438241091787}
   - component: {fileID: 51205445816700397}
   - component: {fileID: 2257859548316026258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car_Line_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,8 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e34795270b77a248a2efe4232742a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 5
+  normalSpeed: 4
   slowSpeed: 2
+  lineToRight: 1
 --- !u!61 &2257859548316026258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7860616347603502005, guid: c9de6cb51af57bc4e8bfc5bcd2ace07e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.75
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 7860616347603502005, guid: c9de6cb51af57bc4e8bfc5bcd2ace07e, type: 3}
       propertyPath: m_LocalPosition.y

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5424522133370330145}
   m_Layer: 0
   m_Name: Bus
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 1, y: 0}
   speed: 1
-  carWidth: 1
 --- !u!60 &2851681210711119851
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Dogger/Scenes/Level_2.unity
     guid: 826d110218939d744bb4a6f7e37d753f
   - enabled: 1
-    path: Assets/Dogger/Scenes/Level_3.unity
-    guid: 3f873b0e062b691469a0fdfe857bade3
-  - enabled: 1
     path: Assets/Dogger/Scenes/Level_Testing.unity
     guid: ee99faea7ac83ed408f9da0852330da1
   - enabled: 1

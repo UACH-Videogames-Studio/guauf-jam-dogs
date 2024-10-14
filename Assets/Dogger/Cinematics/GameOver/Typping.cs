@@ -11,7 +11,6 @@ public class Typping : MonoBehaviour
 
     [SerializeField] bool activateOnStart=true;
     Coroutine coroutine;
-    int index=0;
     string textSave="";
 
     [SerializeField] UnityEvent endEvent;

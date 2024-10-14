@@ -1,0 +1,55 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class MusicManager : MonoBehaviour
+{
+    public AudioSource barkSound;
+    public AudioSource startLevelMusic;
+    public AudioSource backGroundMusic;
+    public AudioSource carSound;
+    public AudioSource deadMusic;
+    public AudioSource catSound;
+
+    private bool isPlayingBackGround = false;
+    // Start is called before the first frame update
+    void Start()
+    {
+        startLevelMusic.Play();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //Ladrido
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            barkSound.Play();
+        }
+
+        //Reproducir musica de fondo
+        if (!startLevelMusic.isPlaying && !isPlayingBackGround)
+        {
+            backGroundMusic.Play();
+            isPlayingBackGround = true;
+        }   
+    }
+
+    //Reproductor de sonido de carro
+    public void PlayCarSound ()
+        {
+            if (carSound != null)
+            {
+                carSound.Play();
+            }
+        }
+
+    public void PlayDeadMusic ()
+        {
+            if (deadMusic != null)
+            {
+                deadMusic.Play();
+            }
+        }   
+}

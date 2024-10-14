@@ -5,12 +5,19 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    //Vidas del perro
     private int dogLives = 3;
+    //Boleano para identificar si el perro se puede mover
     private bool canMove = true;
+    //Espacio pata añadir el respawn
     public GameObject respawnPoint;
+    public MusicManager musicManager;
 
+    //Campo para añadir el UI manager
     [SerializeField] UImanager uIManager;
+    //Campo para poner las unidades en las que se mueve
     [SerializeField] protected float lateralMovementUnits = 0.25f;
+    
 
 
     // Start is called before the first frame update
@@ -22,10 +29,12 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Codigo para bajar vidas con la K
         if (Input.GetKeyDown(KeyCode.K))
         {
             Damague();
         }
+        //Codigo de dirección de movimiento
         if (canMove)
         {
             Vector3 movement = Vector3.zero;
@@ -50,8 +59,10 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 dogMovement(movement);
             }
-        }
+        }        
     }
+
+    //Codigo para manejar el daño
     private void Damague ()
     {
         if (dogLives > 0)
@@ -64,10 +75,13 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 Debug.Log("Hemos muerto");
                 Time.timeScale = 0;
+                musicManager.PlayDeadMusic();
+                musicManager.backGroundMusic.Stop();
             }
         }
     } 
 
+    //Movimiento del personaje
     private void dogMovement (Vector3 direction)
     {
         canMove = false;
@@ -77,20 +91,29 @@ public class PlayerBehaviour : MonoBehaviour
         StartCoroutine(WaitToMove());
     }
 
+    //Codigo para esperar para otro movimiento
     System.Collections.IEnumerator WaitToMove ()
     {
         yield return new WaitForSeconds(0.1f);
         canMove = true;
     }
 
+    //Detectar collider para activar daño
     void OnTriggerEnter2D (Collider2D other)
     {
         if (other.CompareTag("Car"))
         {
             Damague();
+            musicManager.PlayCarSound();
+        }
+
+        if (other.CompareTag ("Cat"))
+        {
+            respawnPoint.transform.position = other.transform.position;
         }
     }
 
+    //Respawner
     private void Respawn()
     {
         transform.position = respawnPoint.transform.position;

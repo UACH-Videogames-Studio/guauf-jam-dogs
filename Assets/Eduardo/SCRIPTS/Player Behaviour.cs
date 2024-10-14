@@ -77,8 +77,13 @@ public class PlayerBehaviour : MonoBehaviour
         {
             dogLives--;
             uIManager.LessHeart(dogLives);
+            
             Respawn();
-
+            if (dogLives != 0)
+            {
+                musicManager.PlayCarSound();
+            }    
+            
             if (dogLives == 0)
             {
                 Debug.Log("Hemos muerto");
@@ -112,7 +117,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (other.CompareTag("Car"))
         {
             Damague();
-            musicManager.PlayCarSound();
+            
         }
 
         if (other.CompareTag ("Cat"))

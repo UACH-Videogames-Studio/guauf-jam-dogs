@@ -19,7 +19,6 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] protected float lateralMovementUnits = 0.25f;
 
     [SerializeField] protected Animator animator;
-    [SerializeField] protected ChangeSceneManager levelManager;
     [SerializeField] protected ChangeSceneManager gameOverManager;
 
     protected SlowDownLineSkill slowDownTrigger;
@@ -145,7 +144,6 @@ public class PlayerBehaviour : MonoBehaviour
         if (other.CompareTag("Car"))
         {
             Damague();
-            
         }
 
         if (other.CompareTag("Cat"))
@@ -165,15 +163,13 @@ public class PlayerBehaviour : MonoBehaviour
     IEnumerator TimeBeforeGameOver()
     {
         Debug.Log("Hemos muerto");
-        canMove = false;
+        StopMovement();
         musicManager.PlayDeadMusic();
         musicManager.backGroundMusic.Stop();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4f);
         gameOverManager.Activate();
     }
-    IEnumerator TimeBeforeNextLevel()
-    {
-        yield return new WaitForSeconds(5);
-        gameOverManager.Activate();
+    public void StopMovement(){
+        canMove = false;
     }
 }

@@ -21,8 +21,9 @@ public class FinishBehaviour : MonoBehaviour
     {
         if (other.CompareTag("Dog"))
         {
+            other.GetComponent<PlayerBehaviour>().StopMovement();
+
             Destroy(this.gameObject);
-            musicManager.PlayWinSound();
         }
     }
 }

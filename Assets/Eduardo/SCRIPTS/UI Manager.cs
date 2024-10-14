@@ -60,8 +60,8 @@ public class UImanager : MonoBehaviour
         }
         else if (!hasFinish)
         {
-            Time.timeScale = 0;
-            musicManager.backGroundMusic.Stop();
+            // Time.timeScale = 0;
+            StartCoroutine(TimeBeforeNextLevel());
             Debug.Log("Tu puntuacion fue: " + points.ToString("f0"));
             hasFinish = true;
         }
@@ -81,11 +81,19 @@ public class UImanager : MonoBehaviour
         else if (timer <= 0 && !hasCatDied)
         {
             points = 0;
-            Time.timeScale = 0;
+            // Time.timeScale = 0;
             Debug.Log("El gato murio");
             hasCatDied = true;
         }
 
         timerBar.fillAmount = timer / originalTime;
+    }
+    [SerializeField] protected ChangeSceneManager levelManager;
+    IEnumerator TimeBeforeNextLevel()
+    {
+        musicManager.backGroundMusic.Stop();
+        musicManager.PlayWinSound();
+        yield return new WaitForSeconds(1.5f);
+        levelManager.Activate();
     }
 }

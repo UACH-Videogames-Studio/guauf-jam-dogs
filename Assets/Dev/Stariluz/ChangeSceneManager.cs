@@ -7,12 +7,9 @@ public class ChangeSceneManager : MonoBehaviour
 {
     
     [SerializeField] private SceneReference GameScene;
-    [SerializeField] private GameObject gameOverPanel;   // Panel de "Game Over"
-    [SerializeField] private GameObject creditsPanel;    // Panel de Créditos
-
     public bool activateOnInput = true;
 
-    void Start()
+    void Update()
     {
         if (activateOnInput && Input.anyKey)
         {

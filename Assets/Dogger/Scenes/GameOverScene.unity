@@ -1043,7 +1043,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1522024966}
         m_TargetAssemblyTypeName: Typping, Assembly-CSharp
-        m_MethodName: Activate
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1053,6 +1053,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1024536982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1024536983}
+  m_Layer: 0
+  m_Name: CreditsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1024536983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024536982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.0771093, y: -0.37922636, z: -2.496209}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1066280113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,8 +1143,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: DOGGER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3653391a2e05cfe4d88cc166d874d187, type: 2}
-  m_sharedMaterial: {fileID: 5258596451988699146, guid: 3653391a2e05cfe4d88cc166d874d187, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cb242d8f8318e5140bb885f8b403d7f8, type: 2}
+  m_sharedMaterial: {fileID: 529797146961579689, guid: cb242d8f8318e5140bb885f8b403d7f8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1452,7 +1483,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+        m_MethodName: 
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1581,3 +1612,4 @@ SceneRoots:
   - {fileID: 467132897}
   - {fileID: 39398563}
   - {fileID: 287517130}
+  - {fileID: 1024536983}

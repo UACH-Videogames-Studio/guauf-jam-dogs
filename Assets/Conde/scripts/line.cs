@@ -3,18 +3,30 @@ using UnityEngine;
 
 public class line : MonoBehaviour
 {
-    public float normalSpeed = 5f;   // Velocidad normal de la línea de autos
+    [Range(0.5f, 5)]
+    public float normalSpeed = 3f;   // Velocidad normal de la línea de autos
+    
+    [Range(0.5f, 5)]
     public float slowSpeed = 2f;     // Velocidad ralentizada de la línea de autos
     [SerializeField] private bool lineToRight = true;      // Velocidad actual de la línea
     private float speed = 5;      // Velocidad actual de la línea
     private bool isSlowed = false;   // Saber si la línea ya está ralentizada
     private Vector2 direction;
+    private float lastNormalSpeed=5f;
 
     void Start()
     {
         direction = lineToRight ? Vector2.right : Vector2.left;
         speed = normalSpeed;
+        lastNormalSpeed=normalSpeed;
         UpdateChildren();
+    }
+
+    private void OnValidate()
+    {
+        // Redondear el valor a los saltos deseados (0.5 en este caso)
+        normalSpeed = Mathf.Round(normalSpeed * 2) / 2f;
+        slowSpeed =Mathf.Min(slowSpeed, normalSpeed-0.5f);
     }
 
     // void OnEnable()
@@ -30,10 +42,11 @@ public class line : MonoBehaviour
 
     void Update()
     {
-        if(!isSlowed){
+        if(normalSpeed!=lastNormalSpeed&&!isSlowed){
             speed=normalSpeed;
+            lastNormalSpeed=normalSpeed;
+            UpdateChildren();
         }
-        UpdateChildren();
     }
 
     private void UpdateChildren()

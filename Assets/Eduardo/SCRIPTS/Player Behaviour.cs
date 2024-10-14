@@ -75,20 +75,20 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    public float rayDistance = 1f; // Distancia del rayo para detectar colisiones.
+    public float rayDistance = 1.25f; // Distancia del rayo para detectar colisiones.
     public LayerMask obstacleLayer; // Asigna el Layer de los obstáculos.
 
     // Estos bools indicarán si te puedes mover en cada dirección.
-    public bool canMoveUp;
-    public bool canMoveDown;
-    public bool canMoveLeft;
-    public bool canMoveRight;
+    private bool canMoveUp;
+    private bool canMoveDown;
+    private bool canMoveLeft;
+    private bool canMoveRight;
     void CheckMovementDirections()
     {
         Vector3 position = transform.position;
         position.y += 0.5f;
         // Rayos hacia arriba, abajo, izquierda y derecha.
-        canMoveUp = !Physics2D.Raycast(position, Vector2.up, 2, obstacleLayer);
+        canMoveUp = !Physics2D.Raycast(position, Vector2.up, rayDistance, obstacleLayer);
         canMoveDown = !Physics2D.Raycast(position, Vector2.down, rayDistance, obstacleLayer);
         canMoveLeft = !Physics2D.Raycast(position, Vector2.left, rayDistance, obstacleLayer);
         canMoveRight = !Physics2D.Raycast(position, Vector2.right, rayDistance, obstacleLayer);

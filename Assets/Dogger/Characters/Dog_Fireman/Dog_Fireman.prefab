@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6982838235438451964}
   - component: {fileID: 1424001217211933665}
   - component: {fileID: 2592116436305881480}
+  - component: {fileID: -3690891581790217818}
   m_Layer: 0
   m_Name: Dog_Fireman
   m_TagString: Dog
@@ -146,7 +147,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.5}
@@ -160,7 +161,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.35, y: 0.35}
   m_EdgeRadius: 0
 --- !u!95 &6982838235438451964
 Animator:
@@ -200,6 +201,16 @@ MonoBehaviour:
   uIManager: {fileID: 0}
   lateralMovementUnits: 1
   animator: {fileID: 6982838235438451964}
+  levelManager: {fileID: 0}
+  gameOverManager: {fileID: 0}
+  rayDistance: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  canMoveUp: 0
+  canMoveDown: 0
+  canMoveLeft: 0
+  canMoveRight: 0
 --- !u!114 &2592116436305881480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +225,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowSpeed: 2
   slowDownTrigger: {fileID: 4697964835837517516}
+--- !u!82 &-3690891581790217818
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3652214621203176753}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 6979114476380440062, guid: 05a9bfe843661f6468b05393a9eb8f4a, type: 2}
+  m_audioClip: {fileID: 8300000, guid: b7699d92dd2a4624ea3fc0ad1edb7ee5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4697964835837517516
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8983775606972417189}
   - component: {fileID: 6250857120371657739}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SlowDownTrigger
   m_TagString: SlowDownTrigger
   m_Icon: {fileID: 0}

@@ -56,6 +56,7 @@ public class line : MonoBehaviour
     {
         if (other.CompareTag("SlowDownTrigger"))
         {
+            Debug.Log("DESACELERAR");
             other.gameObject.SetActive(false);
             SlowDownLine(SlowDownLineSkill.slowDuration);
         }

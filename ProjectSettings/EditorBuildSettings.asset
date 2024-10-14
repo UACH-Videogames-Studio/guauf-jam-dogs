@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Dogger/Scenes/MenuScene.unity
     guid: ae6a3750ad7f91b42a6020399357531f
+  - enabled: 1
+    path: Assets/Dogger/Scenes/GameOverScene.unity
+    guid: cb139d859398d604db0ce4b8f76ca0ae
+  - enabled: 1
+    path: Assets/Dogger/Scenes/Level_2.unity
+    guid: 826d110218939d744bb4a6f7e37d753f
+  - enabled: 1
+    path: Assets/Dogger/Scenes/Level_3.unity
+    guid: 3f873b0e062b691469a0fdfe857bade3
+  - enabled: 1
+    path: Assets/Dogger/Scenes/Level_Testing.unity
+    guid: ee99faea7ac83ed408f9da0852330da1
   m_configObjects: {}

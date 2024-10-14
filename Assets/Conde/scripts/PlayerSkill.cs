@@ -14,7 +14,7 @@ public class PlayerSkill : MonoBehaviour
     void Update()
     {
         // Detectar si se presiona la tecla "R" para ralentizar la línea 1
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             AcivateSlowDownCollider();
             // VehicleEvents.TriggerSlowDown("line1", slowSpeed, slowDuration); // Ralentizar la línea 1

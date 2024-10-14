@@ -18,7 +18,7 @@ public class PlayerBehaviour : MonoBehaviour
     //Campo para poner las unidades en las que se mueve
     [SerializeField] protected float lateralMovementUnits = 0.25f;
     
-
+    [SerializeField] protected Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -42,18 +42,26 @@ public class PlayerBehaviour : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 movement = Vector3.up;
+                animator.SetBool("IsVerticalAxis", true);
+                animator.SetBool("IsInPositiveDirection", true);
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 movement = Vector3.down;
+                animator.SetBool("IsVerticalAxis", true);
+                animator.SetBool("IsInPositiveDirection", false);
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 movement = Vector3.left;
+                animator.SetBool("IsVerticalAxis", false);
+                animator.SetBool("IsInPositiveDirection", false);
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 movement = Vector3.right;
+                animator.SetBool("IsVerticalAxis", false);
+                animator.SetBool("IsInPositiveDirection", true);
             }
             if (movement != Vector3.zero)
             {

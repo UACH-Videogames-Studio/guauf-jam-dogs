@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 100
-  timer: 10
+  timer: 20
   textoTimer: {fileID: 1603016461}
   timerBar: {fileID: 1694090789}
   cat: {fileID: 1473094714}
@@ -970,7 +970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97.88, y: -1.2702}
+  m_AnchoredPosition: {x: -97.88, y: -12.275}
   m_SizeDelta: {x: 62.8286, y: 33.793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1603016460
@@ -1177,10 +1177,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: be3bd122fb39c1c4dbe2fe451d3ea7f0, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0

@@ -6,14 +6,18 @@ using UnityEngine.Events;
 
 public class Typping : MonoBehaviour
 {
-    [SerializeField] float waitTime=0;
-    [SerializeField] TextMeshProUGUI text;
+    [SerializeField]
+    float waitTime=0;
+    
+    [SerializeField]
+    TextMeshProUGUI text;
 
-    [SerializeField] bool activateOnStart=true;
+    [SerializeField]
+    bool activateOnStart=true;
     Coroutine coroutine;
     string textSave="";
-
-    [SerializeField] UnityEvent endEvent;
+    [SerializeField]
+    UnityEvent endEvent;
     
     // Start is called before the first frame update
     void Start()

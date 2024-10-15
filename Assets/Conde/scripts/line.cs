@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class line : MonoBehaviour
 {
-    [Range(0.5f, 5)]
+    [Range(0.5f, 6f)]
     public float normalSpeed = 3f;   // Velocidad normal de la línea de autos
     
-    [Range(0.5f, 5)]
+    [Range(0.5f, 5f)]
     public float slowSpeed = 2f;     // Velocidad ralentizada de la línea de autos
     [SerializeField] private bool lineToRight = true;      // Velocidad actual de la línea
     private float speed = 5;      // Velocidad actual de la línea

@@ -13,7 +13,7 @@ public class WinManager : MonoBehaviour
             {
                 Application.Quit();
             }
-            else
+            else if (Input.GetKeyDown(KeyCode.Space))
             {
                 SceneManager.LoadScene("MenuScene");
             }

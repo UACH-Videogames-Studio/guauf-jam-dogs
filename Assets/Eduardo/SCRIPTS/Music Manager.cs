@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    public AudioSource barkSound;
     public AudioSource startLevelMusic;
     public AudioSource backGroundMusic;
     public AudioSource carSound;
@@ -23,11 +22,6 @@ public class MusicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Ladrido
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            barkSound.Play();
-        }
 
         //Reproducir musica de fondo
         if (!startLevelMusic.isPlaying && !isPlayingBackGround)

@@ -5,7 +5,7 @@ using Eflatun.SceneReference;
 
 public class ChangeSceneManager : MonoBehaviour
 {
-    
+
     [SerializeField] private SceneReference GameScene;
     public bool activateOnInput = true;
 
@@ -16,12 +16,15 @@ public class ChangeSceneManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 Application.Quit();
-            }else{
+            }
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
                 Activate();
             }
         }
     }
-    public void Activate(){
+    public void Activate()
+    {
         SceneManager.LoadScene(GameScene.Name);
     }
 }

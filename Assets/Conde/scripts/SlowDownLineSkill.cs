@@ -11,13 +11,23 @@ public class SlowDownLineSkill : MonoBehaviour
 
     [SerializeField] GameObject slowDownTrigger;
 
+    private bool allowSkill = true;
+    public AudioSource barkSound;
     void Update()
     {
-        // Detectar si se presiona la tecla "R" para ralentizar la línea 1
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (allowSkill)
         {
-            AcivateSlowDownTrigger();
+            // Detectar si se presiona la tecla "R" para ralentizar la línea 1
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                barkSound.Play();
+                AcivateSlowDownTrigger();
+            }
         }
+    }
+    public void Deactivate()
+    {
+        allowSkill = false;
     }
 
     public void MoveSlowDownTrigger()

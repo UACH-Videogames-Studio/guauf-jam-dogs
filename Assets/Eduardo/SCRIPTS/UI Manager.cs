@@ -35,8 +35,12 @@ public class UImanager : MonoBehaviour
     //Campo para añadir corazon vacio que sustituye corazon normal
     [SerializeField] private Sprite dissableHeart;
 
+    [SerializeField] protected ChangeSceneManager gameOverManager;
+
+    [SerializeField] protected GameObject player;
+
     //Función par acambiar los corazones
-    public void LessHeart (int i)
+    public void LessHeart(int i)
     {
         Image heartImage = heartList[i].GetComponent<Image>();
         heartImage.sprite = dissableHeart;
@@ -56,7 +60,7 @@ public class UImanager : MonoBehaviour
         //Sistema de puntuación 
         if (finish != null)
         {
-            points -= Time.deltaTime*20;
+            points -= Time.deltaTime * 20;
         }
         else if (!hasFinish)
         {
@@ -69,18 +73,20 @@ public class UImanager : MonoBehaviour
         //Sistema de timer
         if (timer >= 0 && cat != null)
         {
-        timer -= Time.deltaTime;
-        textoTimer.text = "" + timer.ToString("f1");
+            timer -= Time.deltaTime;
+            textoTimer.text = "" + timer.ToString("f1");
         }
         else if (cat == null && !hasSavedCat)
         {
             Debug.Log("Salvaste al gato");
             hasSavedCat = true;
+            player.GetComponent<SlowDownLineSkill>().Deactivate();
             finish.SetActive(hasSavedCat);
         }
         else if (timer <= 0 && !hasCatDied)
         {
             points = 0;
+            StartCoroutine(TimeBeforeGameOver());
             // Time.timeScale = 0;
             Debug.Log("El gato murio");
             hasCatDied = true;
@@ -89,8 +95,19 @@ public class UImanager : MonoBehaviour
         timerBar.fillAmount = timer / originalTime;
     }
     [SerializeField] protected ChangeSceneManager levelManager;
+
+    IEnumerator TimeBeforeGameOver()
+    {
+        player.GetComponent<PlayerBehaviour>().StopMovement();
+        musicManager.PlayDeadMusic();
+        musicManager.backGroundMusic.Stop();
+        yield return new WaitForSeconds(4f);
+        gameOverManager.Activate();
+    }
+
     IEnumerator TimeBeforeNextLevel()
     {
+        player.GetComponent<PlayerBehaviour>().StopMovement();
         musicManager.backGroundMusic.Stop();
         musicManager.PlayWinSound();
         yield return new WaitForSeconds(1.5f);

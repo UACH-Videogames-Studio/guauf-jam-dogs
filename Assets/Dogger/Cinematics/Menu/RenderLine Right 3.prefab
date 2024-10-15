@@ -10,23 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 240835415010983317, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_Name
-      value: RenderLine Right 2
+      value: RenderLine Right 3
       objectReference: {fileID: 0}
     - target: {fileID: 3373991865496385624, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 8400000, guid: 6fabcace29e8ef4498718bc938dd3729, type: 2}
-    - target: {fileID: 4674508337149940534, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
-      propertyPath: carSpeed
-      value: 3
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8400000, guid: 812257ac75095e44e90a3f396c5e1cfa, type: 2}
     - target: {fileID: 4978556916888808503, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4978556916888808503, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 97
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4978556916888808503, guid: 83102b0b0cca8314ba5d94372754aa14, type: 3}
       propertyPath: m_LocalPosition.z

@@ -86,6 +86,7 @@ public class UImanager : MonoBehaviour
         else if (timer <= 0 && !hasCatDied)
         {
             points = 0;
+            StartCoroutine(TimeBeforeGameOver());
             // Time.timeScale = 0;
             Debug.Log("El gato murio");
             hasCatDied = true;

@@ -9,23 +9,20 @@ public class CarSpawner : MonoBehaviour
     private int carsLength = 0;
     [SerializeField]
     [Min(0)]
-    float carSpeed=5;
-    [SerializeField]
-    bool carToRight=true;
+    float carSpeed = 5;
     [SerializeField]
     private GameObject carPrefab;
 
     [SerializeField]
-    private CarMovement[]  defaultCars;
+    private CarMovement[] defaultCars;
 
     [SerializeField]
     private float gapBetweenCars = 0.5f;
 
     [SerializeField]
     private float minTime, maxTime = 0f;
-    private float lastSpawnX;
 
-    private Vector3 positionLastSpawned;
+    [SerializeField] private GameObject lastSpawned;
 
     Coroutine timeCoroutine;
 
@@ -33,11 +30,12 @@ public class CarSpawner : MonoBehaviour
     void Start()
     {
         carsLength = cars.Length;
-        lastSpawnX = transform.position.x;
 
-        if(defaultCars!=null){
-            for(int i=0; i<defaultCars.Length; i++){
-                defaultCars[i].speed=(carToRight?1:-1)*carSpeed;
+        if (defaultCars != null)
+        {
+            for (int i = 0; i < defaultCars.Length; i++)
+            {
+                defaultCars[i].speed = carSpeed;
             }
         }
 
@@ -53,9 +51,9 @@ public class CarSpawner : MonoBehaviour
     void SpawnCar()
     {
         // Instantiate a new car prefab at the spawner's position and rotation
-        GameObject newCar = Instantiate(carPrefab, new Vector3(lastSpawnX, transform.position.y, transform.position.z), transform.rotation, transform);
+        GameObject newCar = Instantiate(carPrefab, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation, transform);
 
-        newCar.GetComponent<CarMovement>().speed=(carToRight?1:-1)*carSpeed;
+        newCar.GetComponent<CarMovement>().speed = carSpeed;
 
         // Pick a random sprite from the array of car sprites
         Sprite randomCarSprite = cars[Random.Range(0, carsLength)];
@@ -68,15 +66,16 @@ public class CarSpawner : MonoBehaviour
 
             // Calculate the width of the car sprite
             float carWidth = carSpriteRenderer.bounds.size.x;
-            
-            Vector3 newCarPosition=newCar.transform.position;
-            // Update the last spawn X position by adding the car's width and the gap between cars
-            if(carToRight){
-                newCar.transform.position=new Vector3(Mathf.Min(positionLastSpawned.x - (carWidth + gapBetweenCars), newCarPosition.x), newCarPosition.y);
-            }else{
-                newCar.transform.position=new Vector3(Mathf.Min(positionLastSpawned.x - (carWidth + gapBetweenCars), newCarPosition.x), newCarPosition.y);
+
+            Vector3 newCarPosition = newCar.transform.position;
+            float x1=newCarPosition.x;
+            float x2Position = lastSpawned.transform.position.x-carWidth-gapBetweenCars;
+            if (x1 > x2Position){
+                Debug.Log((gameObject.name, "Moved to avoid colission", x1, x2Position));
+                x1=x2Position;
             }
-            positionLastSpawned = newCarPosition;
+            newCar.transform.position = new Vector3(x1, newCarPosition.y);
+            lastSpawned = newCar;
         }
     }
 

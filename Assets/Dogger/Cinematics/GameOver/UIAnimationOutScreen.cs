@@ -34,6 +34,9 @@ public class CreditsOpenAnimation : MonoBehaviour
         limitY = startX + directionY * (rTransform.rect.height + 200f);
 
     }
+    void OnDisable(){
+        StopAllCoroutines();
+    }
 
     void Update()
     {

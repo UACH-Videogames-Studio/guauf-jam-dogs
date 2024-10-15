@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press any key to restart
+  m_text: Press [space] to restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3653391a2e05cfe4d88cc166d874d187, type: 2}
   m_sharedMaterial: {fileID: 5258596451988699146, guid: 3653391a2e05cfe4d88cc166d874d187, type: 2}

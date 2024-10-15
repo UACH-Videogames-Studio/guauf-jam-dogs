@@ -21,6 +21,9 @@ public class CreditsScroll : MonoBehaviour
         startY = creditsTransform.anchoredPosition.y; // Guarda la posición inicial
         updateFunction = EmptyFunction;
     }
+    void OnDisable(){
+        StopAllCoroutines();
+    }
 
     void Update()
     {
@@ -33,7 +36,7 @@ public class CreditsScroll : MonoBehaviour
         creditsTransform.anchoredPosition += new Vector2(0, scrollSpeed * Time.deltaTime);
 
         // Verificar si los créditos han pasado la pantalla
-        if (creditsTransform.anchoredPosition.y >= startY + creditsTransform.rect.height + 480f)
+        if (creditsTransform.anchoredPosition.y >= startY + creditsTransform.rect.height + 450f)
         {
             updateFunction=EmptyFunction;
             StartCoroutine(EndTransitionAfterDelay());

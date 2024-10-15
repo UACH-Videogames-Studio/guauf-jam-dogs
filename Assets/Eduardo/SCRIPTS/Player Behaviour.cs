@@ -8,7 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
     //Vidas del perro
     private int dogLives = 3;
     //Boleano para identificar si el perro se puede mover
-    private bool canMove = true;
+    private bool canMove, allowMove = true;
     //Espacio pata añadir el respawn
     public GameObject respawnPoint;
     public MusicManager musicManager;
@@ -27,21 +27,17 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         canMove = true;
-        slowDownTrigger=GetComponent<SlowDownLineSkill>();
+        allowMove = true;
+        slowDownTrigger = GetComponent<SlowDownLineSkill>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckMovementDirections();
-        //Codigo para bajar vidas con la K
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Damague();
-        }
         //Codigo de dirección de movimiento
-        if (canMove)
+        if (allowMove&&canMove)
         {
+            CheckMovementDirections();
             Vector3 movement = Vector3.zero;
 
             if (canMoveUp && Input.GetKeyDown(KeyCode.UpArrow))
@@ -107,13 +103,13 @@ public class PlayerBehaviour : MonoBehaviour
         {
             dogLives--;
             uIManager.LessHeart(dogLives);
-            
+
             Respawn();
             if (dogLives != 0)
             {
                 musicManager.PlayCarSound();
-            }    
-            
+            }
+
             if (dogLives == 0)
             {
                 StartCoroutine(TimeBeforeGameOver());
@@ -169,7 +165,8 @@ public class PlayerBehaviour : MonoBehaviour
         yield return new WaitForSeconds(4f);
         gameOverManager.Activate();
     }
-    public void StopMovement(){
-        canMove = false;
+    public void StopMovement()
+    {
+        allowMove = false;
     }
 }

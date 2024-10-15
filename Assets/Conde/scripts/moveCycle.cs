@@ -16,9 +16,12 @@ public class MoveCycle : MonoBehaviour
 
     private void Start()
     {
-        // Obtiene los límites de la pantalla
-        leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
-        rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
+        // Obtiene los límites de la pantalla (no funciona
+        // si la pantalla la queremos a resolucion fija)
+        // leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero); 
+        // rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right); 
+        leftEdge=new Vector3(-6.5f, 0f);
+        rightEdge=new Vector3(6.5f, 0f);
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         // carWidth = spriteRenderer.bounds.size.x;
@@ -27,21 +30,21 @@ public class MoveCycle : MonoBehaviour
     private void Update()
     {
         // Mueve el auto en la dirección especificada
-        rb.velocity=direction * speed;
+        rb.velocity = direction * speed;
 
-            Vector3 position = transform.position;
+        Vector3 position = transform.position;
 
         // Verifica si el auto está completamente fuera de los límites derecho o izquierdo
         if (direction.x > 0 && transform.position.x > rightEdge.x)
         {
             // Reposiciona el auto al límite izquierdo
-            position.x = leftEdge.x - 2; // Respawn al lado izquierdo
+            position.x = leftEdge.x - 4; // Respawn al lado izquierdo
             transform.position = position;
         }
         else if (direction.x < 0 && transform.position.x < leftEdge.x)
         {
             // Reposiciona el auto al límite derecho
-            position.x = rightEdge.x + 2; // Respawn al lado derecho
+            position.x = rightEdge.x + 4; // Respawn al lado derecho
             transform.position = position;
         }
     }

@@ -1491,6 +1491,8 @@ MonoBehaviour:
   - {fileID: 8104607954496025519}
   - {fileID: 3056330877008652200}
   dissableHeart: {fileID: 21300002, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
+  gameOverManager: {fileID: 4770702807882138364}
+  player: {fileID: 3645484619414405820}
   levelManager: {fileID: 2712690447796881134}
 --- !u!1 &6862600624753069531
 GameObject:
@@ -2025,7 +2027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d278f9e93b850f4f92ab6edc3bee452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barkSound: {fileID: 5548232989143402027}
   startLevelMusic: {fileID: 6512384126595115531}
   backGroundMusic: {fileID: 7654722359685382336}
   carSound: {fileID: 1319952768664815650}
@@ -2173,10 +2174,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 384244615900149683}
     - target: {fileID: 1424001217211933665, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
-      propertyPath: levelManager
-      value: 
-      objectReference: {fileID: 2712690447796881134}
-    - target: {fileID: 1424001217211933665, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
       propertyPath: musicManager
       value: 
       objectReference: {fileID: 7120203809118392700}
@@ -2191,10 +2188,6 @@ PrefabInstance:
     - target: {fileID: 3652214621203176753, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
       propertyPath: m_Name
       value: Dog_Fireman
-      objectReference: {fileID: 0}
-    - target: {fileID: 5226597152456974942, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6344616141666752055, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2241,9 +2234,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
---- !u!82 &5548232989143402027 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: -3690891581790217818, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
+--- !u!1 &3645484619414405820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3652214621203176753, guid: 4057f67ea51cdae4e977ba032739f42f, type: 3}
   m_PrefabInstance: {fileID: 15790272681418637}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6355850038162524602 stripped

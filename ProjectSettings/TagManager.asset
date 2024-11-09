@@ -8,6 +8,7 @@ TagManager:
   - SlowDownTrigger
   - Car
   - Cat
+  - Bone
   layers:
   - Default
   - TransparentFX

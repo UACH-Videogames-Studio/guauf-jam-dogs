@@ -86,10 +86,11 @@ public class UImanager : MonoBehaviour
         else if (timer <= 0 && !hasCatDied)
         {
             points = 0;
-            StartCoroutine(TimeBeforeGameOver());
             // Time.timeScale = 0;
             Debug.Log("El gato murio");
             hasCatDied = true;
+            cat.GetComponent<CatBehaviour>().StartDisappearingAnimation();
+            StartCoroutine(TimeBeforeGameOver());
         }
 
         timerBar.fillAmount = timer / originalTime;
@@ -101,7 +102,7 @@ public class UImanager : MonoBehaviour
         player.GetComponent<PlayerBehaviour>().StopMovement();
         musicManager.PlayDeadMusic();
         musicManager.backGroundMusic.Stop();
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         gameOverManager.Activate();
     }
 

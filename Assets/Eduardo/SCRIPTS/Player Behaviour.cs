@@ -148,6 +148,11 @@ public class PlayerBehaviour : MonoBehaviour
             animator.SetBool("HasCat", true);
             respawnPoint.transform.position = other.transform.position;
         }
+        if (other.CompareTag("Bone"))
+        {
+            slowDownTrigger.ResetUses();
+            Destroy(other.gameObject);
+        }
     }
 
     //Respawner

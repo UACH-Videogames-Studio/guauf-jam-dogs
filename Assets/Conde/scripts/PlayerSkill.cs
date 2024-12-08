@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System;
 using UnityEngine;
-using Unity.VisualScripting;
 
 // ===
 // @deprecated
@@ -11,12 +8,25 @@ public class PlayerSkill : MonoBehaviour
 {
     public float slowSpeed = 2f;
     static public float slowDuration = 5f;
+    private DogInputActions dogInputActions;
 
     [SerializeField] GameObject slowDownCollider;
+    private void Awake() //Esto es necesario para que jale el input system
+    {
+        dogInputActions = new DogInputActions();
+    }
+    private void OnEnable() //Esto es necesario para que jale el input system
+    {
+        dogInputActions.Enable();
+    }
+    private void OnDisable() //Esto es necesario para que jale el input system
+    {
+        dogInputActions.Disable();
+    }
     void Update()
     {
         // Detectar si se presiona la tecla "R" para ralentizar la línea 1
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(dogInputActions.Base.Bark.WasPressedThisFrame()) //if(Input.GetKeyDown(KeyCode.Space)) <- Este es el antiguo
         {
             AcivateSlowDownCollider();
             // VehicleEvents.TriggerSlowDown("line1", slowSpeed, slowDuration); // Ralentizar la línea 1

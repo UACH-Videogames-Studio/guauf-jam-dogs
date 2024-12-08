@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
@@ -9,6 +7,8 @@ public class PlayerBehaviour : MonoBehaviour
     private int dogLives = 3;
     //Boleano para identificar si el perro se puede mover
     private bool canMove, allowMove = true;
+    //Referencia al New Input System
+    private DogInputActions dogInputActions;
     //Espacio pata añadir el respawn
     public GameObject respawnPoint;
     public MusicManager musicManager;
@@ -22,8 +22,18 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] protected ChangeSceneManager gameOverManager;
 
     protected SlowDownLineSkill slowDownTrigger;
-
-    // Start is called before the first frame update
+    private void Awake() //Esto es necesario para que jale el input system
+    {
+        dogInputActions = new DogInputActions();
+    }
+    private void OnEnable() //Esto es necesario para que jale el input system
+    {
+        dogInputActions.Enable();
+    }
+    private void OnDisable() //Esto es necesario para que jale el input system
+    {
+        dogInputActions.Disable();
+    }
     void Start()
     {
         canMove = true;
@@ -40,25 +50,25 @@ public class PlayerBehaviour : MonoBehaviour
             CheckMovementDirections();
             Vector3 movement = Vector3.zero;
 
-            if (canMoveUp && Input.GetKeyDown(KeyCode.UpArrow))
+            if(canMoveUp && dogInputActions.Base.MoveUp.WasPressedThisFrame()) //if (canMoveUp && Input.GetKeyDown(KeyCode.UpArrow)) <- Este es el anterior
             {
                 movement = Vector3.up;
                 animator.SetBool("IsVerticalAxis", true);
                 animator.SetBool("IsInPositiveDirection", true);
             }
-            if (canMoveDown && Input.GetKeyDown(KeyCode.DownArrow))
+            if(canMoveDown && dogInputActions.Base.MoveDown.WasPressedThisFrame()) //if (canMoveDown && Input.GetKeyDown(KeyCode.DownArrow)) <- Este es el anterior
             {
                 movement = Vector3.down;
                 animator.SetBool("IsVerticalAxis", true);
                 animator.SetBool("IsInPositiveDirection", false);
             }
-            if (canMoveLeft && Input.GetKeyDown(KeyCode.LeftArrow))
+            if(canMoveLeft && dogInputActions.Base.MoveLeft.WasPressedThisFrame()) //if (canMoveLeft && Input.GetKeyDown(KeyCode.LeftArrow)) <- Este es el anterior
             {
                 movement = Vector3.left;
                 animator.SetBool("IsVerticalAxis", false);
                 animator.SetBool("IsInPositiveDirection", false);
             }
-            if (canMoveRight && Input.GetKeyDown(KeyCode.RightArrow))
+            if(canMoveRight && dogInputActions.Base.MoveRight.WasPressedThisFrame()) //if (canMoveRight && Input.GetKeyDown(KeyCode.RightArrow)) <- Este es el anterior
             {
                 movement = Vector3.right;
                 animator.SetBool("IsVerticalAxis", false);
